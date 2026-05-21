@@ -1,20 +1,28 @@
 {
-  "name": "devkite-ctx",
+  "name": "devkite-context-cli",
   "version": "1.0.0",
-  "description": "Open-source core token optimization engine for DevKite CTX.",
-  "type": "module",
+  "description": "Deterministic, zero-dependency context compression engine for local LLMs",
   "main": "index.js",
+  "type": "module",
   "bin": {
     "devkite-ctx": "./index.js"
   },
-  "scripts": {
-    "start": "node index.js"
+  "publishConfig": {
+    "access": "public"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "llm",
+    "context",
+    "minify",
+    "tokens",
+    "ai-tools",
+    "sovereign-ai"
+  ],
+  "author": "devkite-app",
+  "license": "MIT",
   "dependencies": {
-    "clipboardy": "^5.3.1",
+  "clipboardy": "^5.3.1",
     "glob": "^13.0.6"
   }
 }
+
