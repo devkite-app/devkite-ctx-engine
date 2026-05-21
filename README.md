@@ -50,8 +50,16 @@ npx devkite-context-cli src/components
    * **Bloat Stripping:** Strips out comments, discards dead layout spacing, and flattens redundant line breaks.
  3. **Zero-Friction Copy:** The beautifully dense, token-optimized code payload is injected directly into your system clipboard automatically.
 Just hit Cmd+V or Ctrl+V straight into Claude or ChatGPT. The AI receives pure code logic, resulting in faster processing, zero distraction from boilerplate fluff, and highly accurate refactoring outputs.
+
 ## 💻 Technical Details & Scope
-The engine handles single-file execution paths as well as recursive directory walking, cleanly separating files by type and rebuilding their context footprint instantly. It natively honors default ignore profiles for massive local runtime trees (node_modules) and production builds to guarantee lightweight processing overhead.
+
+The engine handles single-file execution paths as well as recursive directory walking, cleanly separating files by type and rebuilding their context footprint instantly. 
+
+### 🚫 Global Exclusions (Skip List)
+To guarantee lightweight processing overhead and protect your system clipboard from multi-megabyte junk text, the engine automatically ignores the following directories by default:
+* **Dependencies:** `node_modules`, `bower_components`
+* **Framework Build Artifacts:** `.next`, `dist`, `build`, `.nuxt`, `out`, `.cache`
+* **Version Control & System Files:** `.git`, `.svn`, `.DS_Store`, `Thumbs.db`
 ## 📄 License
 MIT
 ```
