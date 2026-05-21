@@ -1,0 +1,10 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Debugging and system logs
+npm-debug.log*
+.DS_Store
+
+# Future build directories
+dist/

@@ -1,0 +1,20 @@
+{
+  "name": "devkite-ctx",
+  "version": "1.0.0",
+  "description": "Open-source core token optimization engine for DevKite CTX.",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "devkite-ctx": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "clipboardy": "^5.3.1",
+    "glob": "^13.0.6"
+  }
+}
